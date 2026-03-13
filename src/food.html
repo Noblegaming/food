@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Cantik - Pesanan Via WhatsApp</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #ffdae0;
+            --dark-pink: #f48fb1;
+            --accent-floral: #ad1457;
+            --whatsapp-green: #25D366;
+            --text-color: #5d4037;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #fff5f7;
+            color: var(--text-color);
+            background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+        }
+
+        header {
+            background-color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-pink);
+        }
+
+        .avatar-container {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            border: 5px solid var(--dark-pink);
+            overflow: hidden;
+            background-color: #fce4ec;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 { color: var(--accent-floral); margin: 0; font-family: 'Georgia', serif; font-size: 2.5rem; }
+        .subtitle { font-style: italic; color: var(--dark-pink); margin-top: 10px; }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+            transition: 0.3s;
+            border: 1px solid var(--primary-pink);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-item:hover { transform: translateY(-8px); }
+
+        .menu-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #fef0f2;
+        }
+
+        .menu-info {
+            padding: 1.5rem;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .menu-info h3 { margin: 0 0 8px; color: var(--accent-floral); font-size: 1.4rem; }
+        .price { font-weight: bold; color: var(--dark-pink); font-size: 1.3rem; margin-bottom: 15px; display: block; }
+
+        .btn-wa {
+            display: inline-block;
+            background-color: var(--whatsapp-green);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-wa:hover { background-color: #1ebe57; transform: scale(1.05); }
+        .btn-wa i { margin-right: 8px; }
+
+        .floral-divider { text-align: center; font-size: 2.5rem; color: var(--dark-pink); margin: 3rem 0; opacity: 0.6; }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background: white;
+            margin-top: 4rem;
+            border-top: 2px solid var(--primary-pink);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="avatar-container">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Harley&top=hijabMagental&accessories=round&baseColor=f3d1c1" alt="Owner">
+    </div>
+    <h1>Menu Manis Kakak</h1>
+    <p class="subtitle">🌸 Lezat di Lidah, Cantik di Mata 🌸</p>
+</header>
+
+<div class="container">
+    <div class="floral-divider">
+        <i class="fas fa-leaf"></i> 🌸 <i class="fas fa-leaf"></i>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/400x300?text=Foto+Menu+1" alt="Menu 1" class="menu-img">
+            <div class="menu-info">
+                <h3>Nasi Wangi Mawar</h3>
+                <span class="price">Rp 25.000</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan%20Nasi%20Wangi%20Mawar%20(Rp25.000)" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/400x300?text=Foto+Menu+2" alt="Menu 2" class="menu-img">
+            <div class="menu-info">
+                <h3>Salad Musim Semi</h3>
+                <span class="price">Rp 20.000</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan%20Salad%20Musim%20Semi%20(Rp20.000)" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/400x300?text=Foto+Menu+3" alt="Menu 3" class="menu-img">
+            <div class="menu-info">
+                <h3>Ayam Saus Sakura</h3>
+                <span class="price">Rp 35.000</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan%20Ayam%20Saus%20Sakura%20(Rp35.000)" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/400x300?text=Foto+Menu+4" alt="Menu 4" class="menu-img">
+            <div class="menu-info">
+                <h3>Spaghetti Pinky</h3>
+                <span class="price">Rp 30.000</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan%20Spaghetti%20Pinky%20(Rp30.000)" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/400x300?text=Foto+Menu+5" alt="Menu 5" class="menu-img">
+            <div class="menu-info">
+                <h3>Puding Kelopak</h3>
+                <span class="price">Rp 15.000</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan%20Puding%20Kelopak%20(Rp15.000)" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/400x300?text=Foto+Menu+6" alt="Menu 6" class="menu-img">
+            <div class="menu-info">
+                <h3>Minuman Rosella</h3>
+                <span class="price">Rp 12.000</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan%20Minuman%20Rosella%20(Rp12.000)" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/400x300?text=Foto+Menu+7" alt="Menu 7" class="menu-img">
+            <div class="menu-info">
+                <h3>Macaron Manis</h3>
+                <span class="price">Rp 18.000</span>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kak,%20saya%20mau%20pesan%20Macaron%20Manis%20(Rp18.000)" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Terima kasih sudah mampir! <br> <b>Lokasi:</b> Jl. Bunga Merah Muda No. 101</p>
+</footer>
+
+</body>
+</html>
